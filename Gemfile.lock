@@ -78,6 +78,8 @@ GEM
       reline (>= 0.3.1)
     dockerfile-rails (1.5.3)
       rails
+    erb-formatter (0.4.3)
+      syntax_tree (~> 6.0)
     erubi (1.12.0)
     globalid (1.1.0)
       activesupport (>= 5.0)
@@ -122,6 +124,7 @@ GEM
     nokogiri (1.15.4-x86_64-linux)
       racc (~> 1.4)
     pg (1.5.3)
+    prettier_print (1.2.1)
     puma (5.6.7)
       nio4r (~> 2.0)
     racc (1.7.1)
@@ -173,6 +176,14 @@ GEM
       sprockets (>= 3.0.0)
     stimulus-rails (1.2.2)
       railties (>= 6.0.0)
+    syntax_tree (6.1.1)
+      prettier_print (>= 1.2.0)
+    tailwindcss-rails (2.0.30-aarch64-linux)
+      railties (>= 6.0.0)
+    tailwindcss-rails (2.0.30-arm64-darwin)
+      railties (>= 6.0.0)
+    tailwindcss-rails (2.0.30-x86_64-linux)
+      railties (>= 6.0.0)
     thor (1.2.2)
     timeout (0.4.0)
     turbo-rails (1.4.0)
@@ -200,6 +211,7 @@ DEPENDENCIES
   bootsnap
   debug
   dockerfile-rails (>= 1.5)
+  erb-formatter
   importmap-rails
   jbuilder
   pg (~> 1.1)
@@ -209,6 +221,7 @@ DEPENDENCIES
   sentry-ruby (~> 5.10)
   sprockets-rails
   stimulus-rails
+  tailwindcss-rails (~> 2.0)
   turbo-rails
   tzinfo-data
   web-console

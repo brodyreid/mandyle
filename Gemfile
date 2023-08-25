@@ -54,6 +54,7 @@ group :development, :test do
 end
 
 group :development do
+  gem "erb-formatter"
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 
@@ -70,3 +71,6 @@ gem "dockerfile-rails", ">= 1.5", :group => :development
 gem "sentry-ruby", "~> 5.10"
 
 gem "sentry-rails", "~> 5.10"
+
+gem "tailwindcss-rails", "~> 2.0"
+
