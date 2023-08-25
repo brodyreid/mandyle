@@ -14,12 +14,16 @@ module.exports = {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
       },
+      backgroundImage: {
+        'hero-pattern': '../app/assets/images/hero-pattern.svg',
+        'footer-texture': "url('/img/footer-texture.png')",
+      },
     },
-  },
-  plugins: [
-    require('@tailwindcss/forms'),
-    require('@tailwindcss/aspect-ratio'),
-    require('@tailwindcss/typography'),
-    require('@tailwindcss/container-queries'),
-  ]
+    plugins: [
+      require('@tailwindcss/forms'),
+      require('@tailwindcss/aspect-ratio'),
+      require('@tailwindcss/typography'),
+      require('@tailwindcss/container-queries'),
+    ]
+  }
 }

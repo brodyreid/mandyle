@@ -18,9 +18,15 @@
     "trailingComma": "all"
   },
   "lint-staged": {
-    "*.{js,css,scss}": [
+    "app/**/*.{js}": [
       "prettier --write",
       "eslint --fix"
+    ],
+    "app/**/*.{css,scss}": [
+      "prettier --write"
+    ],
+    "app/**/*.erb": [
+      "erb-lint --write"
     ]
   },
   "husky": {
