@@ -2,13 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-
-/*
-
-@layer components {
-  .btn-primary {
-    @apply py-2 px-4 bg-blue-200;
-  }
+ html {
+  height: 100%;
+  font-size: large;
 }
 
-*/
+img {
+  object-fit: cover;
+}
+
+.background-home {
+  background-size: cover;
+  background-image: url('mandy1.jpeg');
+}
+
+.background-about {
+  background-image: url('diagonal-lines.svg');
+  background-repeat: repeat;
+  background-color: rgb(30, 28, 28);
+}

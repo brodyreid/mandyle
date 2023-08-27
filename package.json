@@ -11,6 +11,11 @@
     "lint-staged": "^14.0.1",
     "prettier": "^3.0.2"
   },
+  "scripts": {
+    "start": "rails s",
+    "dev": "bin/dev",
+    "assets": "bin/rails assets:precompile"
+  },
   "prettier": {
     "printWidth": 120,
     "semi": true,

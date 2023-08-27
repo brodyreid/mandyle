@@ -1,22 +1,18 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
-
-/** @type {import('tailwindcss').Config} */
+const colors = require('tailwindcss/colors')
 
 module.exports = {
+  mode: 'jit',
   content: [
     './public/*.html',
     './app/helpers/**/*.rb',
     './app/javascript/**/*.js',
-    './app/views/**/*'
+    './app/views/**/*.{erb,haml,html,slim}',
   ],
   theme: {
     extend: {
       fontFamily: {
         sans: ['Inter var', ...defaultTheme.fontFamily.sans],
-      },
-      backgroundImage: {
-        'hero-pattern': '../app/assets/images/hero-pattern.svg',
-        'footer-texture': "url('/img/footer-texture.png')",
       },
     },
     plugins: [
@@ -24,6 +20,6 @@ module.exports = {
       require('@tailwindcss/aspect-ratio'),
       require('@tailwindcss/typography'),
       require('@tailwindcss/container-queries'),
-    ]
-  }
-}
+    ],
+  },
+};
