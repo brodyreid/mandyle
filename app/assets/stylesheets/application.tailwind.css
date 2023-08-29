@@ -7,13 +7,10 @@
   font-size: large;
 }
 
-img {
-  object-fit: cover;
-}
-
 .background-home {
   background-size: cover;
   background-image: url('mandy1.jpeg');
+  background-position: center center;
 }
 
 .background-about {

@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "@hotwired/stimulus": "^3.2.2"
+    "@hotwired/stimulus": "^3.2.2",
+    "stimulus-reveal-controller": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.22.11",
@@ -13,8 +14,7 @@
   },
   "scripts": {
     "start": "rails s",
-    "dev": "bin/dev",
-    "assets": "bin/rails assets:precompile"
+    "dev": "bin/dev"
   },
   "prettier": {
     "printWidth": 120,
