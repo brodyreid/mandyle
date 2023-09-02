@@ -7,4 +7,10 @@ Rails.application.routes.draw do
 
   # Defines the route for the "about" page ("/about")
   get '/about', to: 'home#about'
+
+  # Defines the route for the "albums" page ("/albums")
+  get '/albums', to: 'home#albums'
+
+  # Defines the route for the "contact" page ("/contact")
+  get '/contact', to: 'home#contact'
 end
