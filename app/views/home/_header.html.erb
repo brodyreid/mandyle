@@ -1,22 +1,24 @@
-<header data-controller="reveal" >
+<header data-controller="reveal">
   <nav class="mx-auto px-4 flex justify-between items-center sm:px-0">
-      <a href="/" class="hidden text-xl sm:block">Mandy Le Photography</a>
-      <a href="/" class="text-xl sm:hidden">MLP</a>
+    <a href="/" class="hidden text-xl sm:block">Mandy Le Photography</a>
+    <a href="/" class="text-xl sm:hidden">MLP</a>
     <div>
       <div class="navbar-burger sm:hidden">
-  			<button data-action="click->reveal#toggle" type="button" class="navbar-burger flex items-center">
-  				<svg class="block h-4 w-4 fill-current" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-  					<path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
-  				</svg>
-  			</button>
-  		</div>
-      <div class="sm:block hidden">
-        <a href="about" class="font-semibold leading-6">About</a>
-        <a href="albums" class="font-semibold leading-6">Albums</a>
-        <a href="contact" class="font-semibold leading-6">Contact</a>
+        <button
+          data-action="click->reveal#toggle"
+          type="button"
+          class="navbar-burger flex items-center"
+        >
+          <svg
+            class="block h-4 w-4 fill-current"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+          </svg>
+        </button>
       </div>
-      <div 
-      class="sm:hidden hidden">
+      <div class="sm:hidden hidden">
         <a href="about" class="font-semibold leading-6">About</a>
         <a href="albums" class="font-semibold leading-6">Albums</a>
         <a href="contact" class="font-semibold leading-6">Contact</a>
@@ -24,34 +26,120 @@
     </div>
   </nav>
   <!-- Mobile menu, show/hide based on menu open state. -->
-  <div 
-    data-reveal-target="item" 
-    class="navbar-menu relative z-50 hidden">
-		<div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
-		<nav class="fixed top-0 left-0 bottom-0 flex flex-col w-full max-w-sm py-12 px-8 bg-white border-r overflow-y-auto">
-			<div class="flex flex-row-reverse mb-8">
-				<button data-action="click->reveal#hide" class="navbar-close">
-					<svg class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-						<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-					</svg>
-				</button>
-			</div>
-			<div>
-				<ul>
-					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="/">Home</a>
-					</li>
-					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="about">About</a>
-					</li>
-					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="albums">Albums</a>
-					</li>
-					<li class="mb-1">
-						<a class="block p-4 text-sm font-semibold text-gray-400 hover:bg-blue-50 hover:text-blue-600 rounded" href="contact">Contact</a>
-					</li>
-				</ul>
-			</div>
-		</nav>
-    </div>
+  <div data-reveal-target="item" class="navbar-menu relative z-50 hidden">
+    <div class="navbar-backdrop fixed inset-0 bg-gray-800 opacity-25"></div>
+    <nav
+      class="
+        fixed
+        top-0
+        left-0
+        bottom-0
+        flex
+        flex-col
+        w-full
+        max-w-sm
+        py-12
+        px-8
+        bg-white
+        border-r
+        overflow-y-auto
+      "
+    >
+      <div class="flex flex-row-reverse mb-8">
+        <button data-action="click->reveal#hide" class="navbar-close">
+          <svg
+            class="h-6 w-6 text-gray-400 cursor-pointer hover:text-gray-500"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            ></path>
+          </svg>
+        </button>
+      </div>
+      <div>
+        <ul>
+          <li class="mb-1">
+            <a
+              class="
+                block
+                p-4
+                text-sm
+                font-semibold
+                text-gray-400
+                hover:bg-blue-50
+                hover:text-blue-600
+                rounded
+              "
+              href="/"
+            >Home</a>
+          </li>
+          <li class="mb-1">
+            <a
+              class="
+                block
+                p-4
+                text-sm
+                font-semibold
+                text-gray-400
+                hover:bg-blue-50
+                hover:text-blue-600
+                rounded
+              "
+              href="about"
+            >About</a>
+          </li>
+          <li class="mb-1">
+            <a
+              class="
+                block
+                p-4
+                text-sm
+                font-semibold
+                text-gray-400
+                hover:bg-blue-50
+                hover:text-blue-600
+                rounded
+              "
+              href="albums"
+            >Albums</a>
+          </li>
+          <li class="mb-1">
+            <a
+              class="
+                block
+                p-4
+                text-sm
+                font-semibold
+                text-gray-400
+                hover:bg-blue-50
+                hover:text-blue-600
+                rounded
+              "
+              href="contact"
+            >Contact</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/mundy.le/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5 m-4 fill-gray-400"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </header>

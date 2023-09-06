@@ -1,0 +1,14 @@
+<div id="albums">
+  <div class="text-black">
+    Hello this is albums page
+  </div>
+  <ul>
+    <% @folders.each do |folder_name| %>
+      <% if folder_name.present? %>
+        <li>
+          <%= link_to folder_name, album_path(folder_name) %>
+        </li>
+      <% end %>
+    <% end %>
+  </ul>
+</div>
